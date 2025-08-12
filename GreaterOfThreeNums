@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class greaterOfThree {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a,b,c;
+        System.out.printf("Enter the number 1 : ");
+        a = sc.nextInt();
+        System.out.printf("Enter the number 2 : ");
+        b = sc.nextInt();
+        System.out.printf("Enter the number 3 : ");
+        c = sc.nextInt();
+        sc.close();
+        if(a>b && a>c){
+            System.out.printf("a is greater");
+        }
+        else if(b>c && b>a){
+            System.out.printf("b is greater");
+        }
+        else if(c>a && c>b){
+            System.out.printf("c is greater");
+        }
+        else{
+            System.out.printf("Some duplicates are there");
+        }
+    }
+}
