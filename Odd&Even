@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class OddAndEven {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the lower bound : ");
+        int a = sc.nextInt();
+        System.out.print("Enter the upper bound : ");
+        int b = sc.nextInt();
+        if(a<b){
+            String odd = "";
+            String even = "";
+            for(int i = a; i<b+1; i++){
+                if(i%2 == 0){
+                    even = even + i + " ";
+                }
+                else{
+                    odd = odd + i + " ";
+                }
+            }
+            System.out.println("The even number in the range are : "+even);
+            System.out.println("The odd number in the range are : "+odd); 
+        }
+        else{
+            System.out.println("Wrong Bounds");
+        }
+    }
+}
